@@ -8,6 +8,7 @@ public class MaximumNumberTest {
     MaximumNumber maximum = new MaximumNumber(); //creating object of MaximumNumber Class
     Integer max;
     Float float_max;
+    String string_max;
 
     /**
      * in this test case checking 1st position number is max or not
@@ -57,6 +58,25 @@ public class MaximumNumberTest {
     public void given_3_floatNumber_3rdPosition_returnSameNumber(){
         float_max=maximum.maximumNumber(12.2f,15.8f,30.4f);
         Assertions.assertEquals(30.4f,float_max);
+    }
+
+    //*************************[Test Cases for Strings]****************************//
+    @Test
+    public void given_3_Strings_1stPosition_returnSameString(){
+        string_max=maximum.maxString("Orange","Apple","Banana");
+        Assertions.assertEquals("Orange",string_max);
+    }
+
+    @Test
+    public void given_3_Strings_2ndPosition_returnSameString(){
+        string_max=maximum.maxString("Orange","Watermelon","Banana");
+        Assertions.assertEquals("Watermelon",string_max);
+    }
+
+    @Test
+    public void given_3_Strings_3rdPosition_returnSameString(){
+        string_max=maximum.maxString("Orange","Banana","Watermelon");
+        Assertions.assertEquals("Watermelon",string_max);
     }
 
 }
