@@ -9,7 +9,7 @@ public class MaximumNumber {
      * a value less than 0 if this Integer is numerically less than the argument Integer;
      * and a value greater than 0 if this Integer is numerically greater than the argument Integer
      */
-    public Integer MaximumNumber(Integer num1, Integer num2, Integer num3) {
+    public Integer maximumNumber(Integer num1, Integer num2, Integer num3) {
         Integer maxNum=num1;
         if (num2.compareTo(maxNum)>0){
             maxNum=num2;
@@ -20,6 +20,25 @@ public class MaximumNumber {
         return maxNum;
     }
 
+    /**
+     * Compares two Float objects numerically.
+     * @return float maxNum to return maximum number
+     */
+    public Float maximumNumber(Float num1,Float num2,Float num3){
+        Float maxNum=num1;
+        if (num2.compareTo(maxNum)>0){
+            maxNum=num2;
+        }
+        if (num3.compareTo(maxNum)>0){
+            maxNum=num3;
+        }
+        return maxNum;
+    }
+
+    /**
+     * main method
+     * @param args
+     */
     public static void main(String[] args) {
         System.out.println("!!!Welcome To Maximum Number Program!!!");
     }
