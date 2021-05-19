@@ -11,7 +11,7 @@ public class MaximumNumberTest {
      */
     @Test
     public void givenMaxNumber1stPosition_returnSameNumber() {
-        Integer max = MaximumNumber.checkMaximum(12, 9, 7,7,4);
+        Integer max = (Integer) new MaximumNumber(12, 9, 7,7,4).getCheckMaximum();
         Assertions.assertEquals(12, max);
     }
 
@@ -39,7 +39,7 @@ public class MaximumNumberTest {
 
     @Test
     public void given_3_floatNumber_1stPosition_returnSameNumber(){
-        Float float_max= (Float) new  MaximumNumber(12.2f,9.2f,3.4f,23.9f,45.4f).getCheckMaximum();
+        Float float_max= (Float) new  MaximumNumber(12.2f,9.2f,3.4f,4.5f,8.7f).getCheckMaximum();
         Assertions.assertEquals(12.2f,float_max);
     }
 
@@ -73,5 +73,4 @@ public class MaximumNumberTest {
         String string_max= (String) new MaximumNumber("Orange","Banana","Watermelon","Strawberry","Apple").getCheckMaximum();
         Assertions.assertEquals("Watermelon",string_max);
     }
-
 }

@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.maxnumber.MaximumNumberTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-19T03:31:07" hostname="LAPTOP-JK99497U" time="0.025">
+<testsuite name="com.maxnumber.MaximumNumberTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2021-05-19T04:00:12" hostname="LAPTOP-JK99497U" time="0.046">
   <properties/>
-  <testcase name="givenMaxNumber1stPosition_returnSameNumber()" classname="com.maxnumber.MaximumNumberTest" time="0.025"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="given_3_Strings_1stPosition_returnSameString()" classname="com.maxnumber.MaximumNumberTest" time="0.028"/>
+  <testcase name="given_3_floatNumber_2ndPosition_returnSameNumber()" classname="com.maxnumber.MaximumNumberTest" time="0.003"/>
+  <testcase name="givenMaxNumber1stPosition_returnSameNumber()" classname="com.maxnumber.MaximumNumberTest" time="0.001"/>
+  <testcase name="given_3_floatNumber_1stPosition_returnSameNumber()" classname="com.maxnumber.MaximumNumberTest" time="0.001"/>
+  <testcase name="given_3_Strings_3rdPosition_returnSameString()" classname="com.maxnumber.MaximumNumberTest" time="0.001"/>
+  <testcase name="givenMaxNumber3rd_Position_returnSameNumber()" classname="com.maxnumber.MaximumNumberTest" time="0.001"/>
+  <testcase name="given_3_Strings_2ndPosition_returnSameString()" classname="com.maxnumber.MaximumNumberTest" time="0.001"/>
+  <testcase name="givenMaxNumber2nd_Position_returnSameNumber()" classname="com.maxnumber.MaximumNumberTest" time="0.001"/>
+  <testcase name="given_3_floatNumber_3rdPosition_returnSameNumber()" classname="com.maxnumber.MaximumNumberTest" time="0.001"/>
+  <system-out><![CDATA[maximum number is: Watermelon
+maximum number is: 12.2
+maximum number is: 12
+maximum number is: 12.2
+maximum number is: Watermelon
+maximum number is: 12
+maximum number is: Watermelon
+maximum number is: 12
+maximum number is: 15.8
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

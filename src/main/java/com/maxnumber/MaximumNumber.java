@@ -35,7 +35,21 @@ public class MaximumNumber<T extends Comparable<T>> {
         if (num3.compareTo(maxNum)>0){
             maxNum=num3;
         }
+        if (num4.compareTo(maxNum)>0){
+            maxNum=num4;
+        }
+        if (num5.compareTo(maxNum)>0){
+            maxNum=num5;
+        }
+        printMax(maxNum);
         return maxNum;
+    }
+
+    /**
+     *generic method printMax to print output which is maximum number
+     */
+    public static <T> void printMax(T maxNum){
+        System.out.println("maximum number is: "+maxNum);
     }
 
     /**
