@@ -16,7 +16,7 @@ public class MaximumNumberTest {
      */
     @Test
     public void givenMaxNumber1stPosition_returnSameNumber() {
-        max = maximum.maximumNumber(12, 9, 7);
+        max = maximum.checkMaximum(12, 9, 7);
         Assertions.assertEquals(12, max);
     }
 
@@ -26,7 +26,7 @@ public class MaximumNumberTest {
      */
     @Test
     public void givenMaxNumber2nd_Position_returnSameNumber() {
-        max = maximum.maximumNumber(12,23,15);
+        max = maximum.checkMaximum(12,23,15);
         Assertions.assertEquals(23, max);
     }
 
@@ -36,7 +36,7 @@ public class MaximumNumberTest {
      */
     @Test
     public void givenMaxNumber3rd_Position_returnSameNumber(){
-        max=maximum.maximumNumber(12,23,35);
+        max=maximum.checkMaximum(12,23,35);
         Assertions.assertEquals(35,max);
     }
 
@@ -44,38 +44,38 @@ public class MaximumNumberTest {
 
     @Test
     public void given_3_floatNumber_1stPosition_returnSameNumber(){
-        float_max=maximum.maximumNumber(12.2f,9.2f,3.4f);
+        float_max=maximum.checkMaximum(12.2f,9.2f,3.4f);
         Assertions.assertEquals(12.2f,float_max);
     }
 
     @Test
     public void given_3_floatNumber_2ndPosition_returnSameNumber(){
-        float_max=maximum.maximumNumber(12.2f,15.8f,3.4f);
+        float_max=maximum.checkMaximum(12.2f,15.8f,3.4f);
         Assertions.assertEquals(15.8f,float_max);
     }
 
     @Test
     public void given_3_floatNumber_3rdPosition_returnSameNumber(){
-        float_max=maximum.maximumNumber(12.2f,15.8f,30.4f);
+        float_max=maximum.checkMaximum(12.2f,15.8f,30.4f);
         Assertions.assertEquals(30.4f,float_max);
     }
 
     //*************************[Test Cases for Strings]****************************//
     @Test
     public void given_3_Strings_1stPosition_returnSameString(){
-        string_max=maximum.maxString("Orange","Apple","Banana");
+        string_max=maximum.checkMaximum("Orange","Apple","Banana");
         Assertions.assertEquals("Orange",string_max);
     }
 
     @Test
     public void given_3_Strings_2ndPosition_returnSameString(){
-        string_max=maximum.maxString("Orange","Watermelon","Banana");
+        string_max=maximum.checkMaximum("Orange","Watermelon","Banana");
         Assertions.assertEquals("Watermelon",string_max);
     }
 
     @Test
     public void given_3_Strings_3rdPosition_returnSameString(){
-        string_max=maximum.maxString("Orange","Banana","Watermelon");
+        string_max=maximum.checkMaximum("Orange","Banana","Watermelon");
         Assertions.assertEquals("Watermelon",string_max);
     }
 
