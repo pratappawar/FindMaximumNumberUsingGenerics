@@ -11,7 +11,7 @@ public class MaximumNumberTest {
      */
     @Test
     public void givenMaxNumber1stPosition_returnSameNumber() {
-        Integer max = MaximumNumber.checkMaximum(12, 9, 7);
+        Integer max = MaximumNumber.checkMaximum(12, 9, 7,7,4);
         Assertions.assertEquals(12, max);
     }
 
@@ -21,8 +21,8 @@ public class MaximumNumberTest {
      */
     @Test
     public void givenMaxNumber2nd_Position_returnSameNumber() {
-        Integer max = (Integer) new MaximumNumber(12,23,15).getCheckMaximum();
-        Assertions.assertEquals(23, max);
+        Integer max = (Integer) new MaximumNumber(9,12,8,6,4).getCheckMaximum();
+        Assertions.assertEquals(12, max);
     }
 
     /**
@@ -31,46 +31,46 @@ public class MaximumNumberTest {
      */
     @Test
     public void givenMaxNumber3rd_Position_returnSameNumber(){
-        Integer max= (Integer) new MaximumNumber(12,23,35).getCheckMaximum();
-        Assertions.assertEquals(35,max);
+        Integer max= (Integer) new MaximumNumber(9,7,12,8,6).getCheckMaximum();
+        Assertions.assertEquals(12,max);
     }
 
     //*************************Test Cases for Floats ****************************//
 
     @Test
     public void given_3_floatNumber_1stPosition_returnSameNumber(){
-        Float float_max= (Float) new  MaximumNumber(12.2f,9.2f,3.4f).getCheckMaximum();
+        Float float_max= (Float) new  MaximumNumber(12.2f,9.2f,3.4f,23.9f,45.4f).getCheckMaximum();
         Assertions.assertEquals(12.2f,float_max);
     }
 
     @Test
     public void given_3_floatNumber_2ndPosition_returnSameNumber(){
-        Float float_max= (Float) new MaximumNumber(12.2f,15.8f,3.4f).getCheckMaximum();
-        Assertions.assertEquals(15.8f,float_max);
+        Float float_max= (Float) new MaximumNumber(9.8f,12.2f,7.8f,3.4f,5.4f).getCheckMaximum();
+        Assertions.assertEquals(12.2f,float_max);
     }
 
     @Test
     public void given_3_floatNumber_3rdPosition_returnSameNumber(){
-        Float float_max= (Float) new MaximumNumber(12.2f,15.8f,30.4f).getCheckMaximum();
-        Assertions.assertEquals(30.4f,float_max);
+        Float float_max= (Float) new MaximumNumber(9.8f,12.2f,15.8f,3.4f,5.4f).getCheckMaximum();
+        Assertions.assertEquals(15.8f,float_max);
     }
 
     //*************************[Test Cases for Strings]****************************//
     @Test
     public void given_3_Strings_1stPosition_returnSameString(){
-        String string_max= (String) new MaximumNumber("Orange","Apple","Banana").getCheckMaximum();
-        Assertions.assertEquals("Orange",string_max);
+        String string_max= (String) new MaximumNumber("Watermelon","Strawberry","Orange","Apple","Banana").getCheckMaximum();
+        Assertions.assertEquals("Watermelon",string_max);
     }
 
     @Test
     public void given_3_Strings_2ndPosition_returnSameString(){
-        String string_max= (String) new MaximumNumber("Orange","Watermelon","Banana").getCheckMaximum();
+        String string_max= (String) new MaximumNumber("Orange","Watermelon","Apple","Banana","Strawberry").getCheckMaximum();
         Assertions.assertEquals("Watermelon",string_max);
     }
 
     @Test
     public void given_3_Strings_3rdPosition_returnSameString(){
-        String string_max= (String) new MaximumNumber("Orange","Banana","Watermelon").getCheckMaximum();
+        String string_max= (String) new MaximumNumber("Orange","Banana","Watermelon","Strawberry","Apple").getCheckMaximum();
         Assertions.assertEquals("Watermelon",string_max);
     }
 
